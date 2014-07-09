@@ -10,7 +10,7 @@ var MultiValueSelectChoices = React.createClass({
 		return (
 			<ul className="multivalue-select-choices">
 				{this.props.items.map(function(item, i){
-							return <MultiValueSelectChoice name={item.name} key={i} onSelect={self.handleSelect}/>
+							return <MultiValueSelectChoice name={item.name} key={item.id} onSelect={self.handleSelect}/>
 					})}
 			</ul>
 		)
@@ -46,7 +46,7 @@ var AutocompleteSelectResults = React.createClass({
 							var indexOfFilterText = name.toLowerCase().indexOf(filterText.toLowerCase());
 							var contains = (filterText === "") ? true : (indexOfFilterText >= 0);
 								if(contains){
-									return <AutocompleteSelectResult name={item.name} filterText={filterText} key={i} onSelect={self.handleSelect}/>
+									return <AutocompleteSelectResult name={item.name} filterText={filterText} key={item.id} onSelect={self.handleSelect}/>
 								}
 					})}
 			</ul>
@@ -130,6 +130,7 @@ var MultiValueSelect = React.createClass({
 		var selected = [];
 		var unselected = [];
 		this.state.items.map(function(item, i){
+			item.id = i;
 			(item.selected) ? selected.push(item) : unselected.push(item)
 		});
 
