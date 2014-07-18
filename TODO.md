@@ -1,5 +1,5 @@
 1. get a local copy of react library (and JSX Transformer)
-2. include requirejs as a dependency of the repo. also looks like body-parser is a new dependency here. all dependencies should be listed in package.json...
+2. include requirejs as a dependency of the repo.
 3. split contents of scripts/multiValueSelect.js into requirejs modules
 4. add some tests:
   * introduce some test framework (e.g. mocha) as a dependency
