@@ -1,0 +1,10 @@
+{
+"name": "multiValueSelectBox",
+  "description": "A test app to hook together React, and Backbone with Mocha tests",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "1.4.3",
+    "express": "4.6.1" 
+  }
+}
