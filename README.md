@@ -1,12 +1,12 @@
-# React comment box example
+# React -comment box example- Multivalue Select Box inspired by [select2](http://ivaynberg.github.io/select2/)
 
-This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
+-This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).-
 
 ## To use
 
 ```
-npm install express
+npm install
 node server.js
 ```
 
-And visit http://localhost:3000/. Try opening multiple tabs!
+And visit http://localhost:3000/. 
